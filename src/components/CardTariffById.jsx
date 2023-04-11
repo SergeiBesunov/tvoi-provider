@@ -2,10 +2,14 @@ import { useNavigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { changeCategory } from '../redux/slices/filterSlice'
 
+import { addTariffData } from '../redux/slices/connectionForms'
+import { toggleModalForm } from '../redux/slices/modalSlices'
+
 import logoMTS from '../assets/card/mts-logo.svg';
 import logoRos from '../assets/card/ros-logo.svg';
 
 function CardTariffById({
+    id,
     category,
     provider_id,
     name,
@@ -31,7 +35,11 @@ function CardTariffById({
         navigate('/tariffs')
    } 
 
-   
+    // Открываем форму в модалке, и сразу закидываем в нее через store данные тарифа на который кликнули
+    const openModalForm = (id, name) => {
+      dispatch(addTariffData({id: id, name: name}))
+      dispatch(toggleModalForm(true))
+   }
 
 
 return(
@@ -77,7 +85,7 @@ return(
              <p>мес.</p>
           </div>
        </div>
-       <button className="blue-button">Подключить</button>
+       <button className="blue-button" onClick={()=>openModalForm(id, name)}>Подключить</button>
     </div>
 
     {sim_minutes && (

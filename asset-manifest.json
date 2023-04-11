@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/tvoi-provider/static/css/main.a389cd35.css",
-    "main.js": "/tvoi-provider/static/js/main.7ba7e401.js",
+    "main.css": "/tvoi-provider/static/css/main.04e78584.css",
+    "main.js": "/tvoi-provider/static/js/main.45d961a4.js",
     "static/media/city-bg.png": "/tvoi-provider/static/media/city-bg.fa33fa9be3a4b97cd860.png",
     "static/media/partner.jpg": "/tvoi-provider/static/media/partner.1a6b25f7700973b92a89.jpg",
     "static/media/laptop.jpg": "/tvoi-provider/static/media/laptop.7a99cea99d61974403af.jpg",
@@ -22,11 +22,11 @@
     "static/media/filters.svg": "/tvoi-provider/static/media/filters.86e66a3c9f847de03a890bb7df6d09cd.svg",
     "static/media/location-search.svg": "/tvoi-provider/static/media/location-search.d4dbebc68cd39c5fba5c.svg",
     "static/media/close.svg": "/tvoi-provider/static/media/close.537fd201f00cbee73b1c1e55c208ad8b.svg",
-    "main.a389cd35.css.map": "/tvoi-provider/static/css/main.a389cd35.css.map",
-    "main.7ba7e401.js.map": "/tvoi-provider/static/js/main.7ba7e401.js.map"
+    "main.04e78584.css.map": "/tvoi-provider/static/css/main.04e78584.css.map",
+    "main.45d961a4.js.map": "/tvoi-provider/static/js/main.45d961a4.js.map"
   },
   "entrypoints": [
-    "static/css/main.a389cd35.css",
-    "static/js/main.7ba7e401.js"
+    "static/css/main.04e78584.css",
+    "static/js/main.45d961a4.js"
   ]
 }

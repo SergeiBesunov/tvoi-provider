@@ -1,0 +1,45 @@
+.t-form__item-checkbox{
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    align-items: center;
+    line-height: 1.4;
+    margin: 0px 0px 20px 0px;
+    .real-checkbox{
+        width: 0;
+        height: 0;
+        position: absolute;
+        opacity: 0;
+        z-index: -1;
+    }
+    
+
+    .custom-checkbox{
+        flex: 0 0 16px;
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        border: 1px solid #000000;
+        border-radius: 2px;
+        vertical-align:sub;
+        margin-right: 5px;
+        border-radius: 4px;
+        position: relative;
+    }
+    
+    .custom-checkbox::before{
+        content:"";
+        width: 8px;
+        height: 8px;
+        border-radius: 2px;
+        background-color: rgb(49, 49, 49);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%) scale(0);
+        transition: 0.1s ease;
+    }
+    
+    .real-checkbox:checked + .custom-checkbox::before{
+        transform: translate(-50%,-50%) scale(1);
+    }
+}

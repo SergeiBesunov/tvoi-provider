@@ -1,0 +1,52 @@
+.form-wrapper{
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #48484a;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    padding: 35px 0px;
+    border-radius: 25px;
+
+    .form-close{
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+    }
+}
+
+.form-connect{
+    font-family: 'Open Sans', sans-serif;
+    max-width: 80%;
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    p{
+        opacity: 0.6;
+        line-height: 1.2;
+    }
+
+    a{
+        text-decoration: underline;
+    }
+
+    button{
+        margin: 20px 0;
+    }
+
+    textarea{
+        height: 100px;
+        resize: none;
+    }
+
+    &-text{
+        align-self: flex-start;
+        margin-bottom: 20px;
+    }
+
+   
+}

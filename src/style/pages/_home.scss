@@ -1,0 +1,231 @@
+
+.home__top {
+   padding: 250px 0px 50px 0px;
+   background-image:url('../../assets/city-bg.png');
+   background-repeat: no-repeat;
+   background-size: cover;
+
+   &__search {
+      padding-bottom: 190px;
+   }
+
+   &__search-container {
+      @extend %container-home-search;
+   }
+
+   &__categoryes-container {
+      @extend %container-home;
+   }
+
+   .top__search-title {
+      font-size: 44px;
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 8px;
+   }
+
+   .top__search-text {
+      font-size: 20px;
+      text-align: center;
+      margin-bottom: 8px;
+   }
+
+   .top__search-search {
+      position: relative;
+      input {
+         width: 100%;
+         padding: 12px 12px 12px 35px;
+         border-radius: 25px;
+         height: 50px;
+         font-size: 16px;
+         transition: all 0.1s ease 0s;
+         background-image: url('../../assets/icon-svg/location-search.svg');
+         background-repeat: no-repeat;
+         background-size: 20px;
+         background-position: 10px;
+
+         &:focus {
+            border: 3px solid rgba(140, 140, 255, 0.733);
+         }
+      }
+   }
+
+   .top__categoryes-items {
+      display: flex;
+   }
+
+   .top__categoryes-button {
+      display: flex;
+      justify-content: center;
+      padding-top: 28px;
+   }
+
+
+   @media(max-width:800px){
+
+      .top__search-title {
+         font-size: 34px;
+      }
+   }
+
+   @media(max-width:600px){
+
+      .top__search-title {
+         font-size: 30px;
+      }
+
+      &__search {
+         padding-bottom: 90px;
+      }
+
+      .top__categoryes-items {
+         flex-wrap: wrap;
+      }
+   }
+
+   @media(max-width:400px){
+      padding: 200px 0px 50px 0px;
+      
+   }
+}
+
+.top__categoryes-item-wrapper {
+   width: 25%;
+   padding: 0 8px;
+   .top__categoryes-item {
+      height: 100%;
+      background-color: #fff;
+      border-radius: 20px;
+      padding: 35px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      img {
+         width: 60px;
+         height: 60px;
+         margin-bottom: 16px;
+      }
+
+      button {
+         text-align: center;
+         font-size: 18px;
+         font-weight: 600;
+         &:hover {
+            text-decoration: underline;
+         }
+      }
+   }
+
+
+   @media(max-width:600px){
+      width: 50%;
+      margin-bottom: 20px;
+   }
+}
+
+
+.home__partners {
+   padding: 50px 0px;
+   background-image: url('../../assets/partner.jpg');
+   background-position: bottom;
+   background-size: cover;
+
+   &-container {
+      @extend %container-home-parters;
+   }
+
+   &-text {
+      font-size: 28px;
+      margin-bottom: 35px;
+      line-height: 1.2;
+   }
+
+   @media(max-width:600px){
+      &-text {
+         font-size: 22px;
+      }
+   }
+}
+
+.home__tariffs {
+   padding: 50px 0;
+   background-color: #f8f8f8;
+   &-container {
+      @extend %container-home-tariffs;
+   }
+
+   &-cards{
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      justify-content: center;
+      align-self: flex-start;
+      padding: 0px 10px 10px 10px;
+   }
+
+   &-button {
+      display: flex;
+      justify-content: center;
+   }
+
+   &-block {
+      margin: 0 auto;
+      margin-top: 30px;
+      display: flex;
+      padding: 20px;
+      max-width: 1024px;
+      border-radius: 20px;
+      background-color: #000508;
+      color: white;
+
+      .tariffs-block-content {
+         width: 55%;
+         padding-left: 10px;
+
+
+         h3 {
+            font-size: 44px;
+            font-weight: 700;
+            margin-bottom: 8px;
+         }
+
+         p {
+            font-family: 'Open Sans', sans-serif;
+            margin-bottom: 30px;
+            opacity: 0.8;
+         }
+      }
+
+      .tariffs-block-img {
+         width: 45%;
+
+         img {
+            width: 100%;
+            object-fit: cover;
+         }
+      }
+
+
+      @media(max-width:800px){
+         
+
+         flex-direction: column;
+         
+         .tariffs-block-content{
+         width: 100%;
+         padding-left: 0px;
+            h3{
+               font-size: 30px;
+            }
+         }
+      .tariffs-block-img{
+         width: 100%;
+         order: -1;
+      }
+       
+      }
+   }
+
+}

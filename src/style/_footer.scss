@@ -1,0 +1,357 @@
+.questions {
+   font-family: 'Open Sans', sans-serif;
+   padding: 50px 0;
+   background-color: #e8eef5;
+
+   &-container {
+      @extend %container-footer-m;
+   }
+
+   &__blocks {
+      display: flex;
+      margin-top: 30px;
+   }
+
+   &__block {
+      width: 50%;
+      padding: 0 25px;
+      display: flex;
+      flex-direction: column;
+   }
+
+   &__dropdown {
+      position: relative;
+      border-bottom: 1px solid rgb(185, 185, 185);
+      margin-bottom: 10px;
+      padding: 10px 0px 15px 0px;
+
+      &:last-child{
+        border-bottom: none;
+      }
+
+      p {
+         height: 0px;
+         overflow: hidden;
+         transition: 0.5s;
+         overflow-y: auto;
+
+         opacity: 0.8;
+         letter-spacing: 0.4px;
+      }
+
+      svg {
+         transition: 0.2s;
+      }
+   }
+
+   &__dropdown.active {
+      p {
+         height: auto;
+         margin-top: 20px;
+      }
+
+      svg {
+         transform: rotate(180deg);
+      }
+   }
+
+   &__dropdown-question {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      cursor: pointer;
+
+      h3 {
+         width: 95%;
+         font-size: 20px;
+      }
+
+      svg {
+         transform: translateY(4px);
+      }
+   }
+
+   &__buttons {
+      display: flex;
+      margin-top: 30px;
+   }
+
+   &__button-block {
+      width: 50%;
+      padding: 0 25px;
+   }
+
+   &__button-block:nth-child(1) {
+      text-align: end;
+   }
+
+   &__button-block:nth-child(2) {
+      text-align: start;
+   }
+
+   @media (max-width: 800px) {
+      &__blocks {
+         flex-direction: column;
+      }
+
+      &__block {
+         width: 100%;
+      }
+
+      &__buttons {
+         flex-direction: column;
+      }
+
+      &__button-block {
+         width: 100%;
+      }
+
+      &__button-block:nth-child(1) {
+         text-align: center;
+      }
+
+      &__button-block:nth-child(2) {
+         text-align: center;
+         margin-top: 20px;
+      }
+
+      &__dropdown {
+        &:last-child{
+            border-bottom: 1px solid rgb(185, 185, 185);
+        }
+     }
+   }
+}
+
+.footer-info {
+   background-color: #636f7b;
+   padding: 50px 0px;
+   color: #fff;
+
+   &-container {
+      @extend %container-footer-m;
+   }
+
+   &__columns {
+      display: flex;
+   }
+
+   &__col {
+      width: 33.33%;
+      padding: 15px;
+      text-align: center;
+      p {
+         font-size: 20px;
+         font-family: 'Open Sans', sans-serif;
+      }
+   }
+
+   &__col:nth-child(2) {
+      border-left: 1px solid #fff;
+      border-right: 1px solid #fff;
+   }
+
+   &__col-title {
+      font-size: 34px;
+      font-weight: 300;
+      margin-bottom: 17px;
+      span {
+         font-size: 44px;
+         font-weight: 200;
+      }
+   }
+
+   @media (max-width: 800px) {
+      &__columns {
+         flex-direction: column;
+      }
+
+      &__col {
+         width: 100%;
+         border-bottom: 1px solid #fff;
+      }
+
+      &__col:nth-child(2) {
+         border-left: none;
+         border-right: none;
+      }
+   }
+}
+
+.connect {
+   padding: 50px 0;
+   background-color: #1a1a1d;
+   color: #e5e5e2;
+
+   &-container {
+      @extend %container-footer-m;
+   }
+
+   &-title {
+      font-size: 24px;
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 8px;
+      padding-bottom: 8px;
+      opacity: 0.9;
+   }
+
+   &-text {
+      font-family: 'Open Sans', sans-serif;
+      text-align: center;
+      margin-bottom: 16px;
+      padding-bottom: 8px;
+      opacity: 0.8;
+      max-width: 1000px;
+   }
+
+   &__actions {
+      display: flex;
+      padding: 30px 25px 0px 25px;
+      margin-bottom: 30px;
+   }
+
+   &__actions-col {
+      position: relative;
+      padding: 0px 48px 30px 15px;
+      border-bottom: 2px solid #e5e5e2;
+
+      &:before {
+         position: absolute;
+         bottom: 0;
+         left: 0;
+         width: 14px;
+         height: 14px;
+         border: 2px solid #e5e5e2;
+         background-color: #1a1a1d;
+         border-radius: 50%;
+         transform: translateY(50%);
+         content: '';
+      }
+
+      h2 {
+         font-size: 80px;
+         font-weight: 200;
+         margin-bottom: 10px;
+      }
+
+      h3 {
+         font-size: 20px;
+         font-weight: 500px;
+         margin-bottom: 10px;
+      }
+
+      p {
+         text-align: start;
+      }
+   }
+
+   &-bot {
+      padding: 20px 0;
+      background-color: #1a1a1d;
+      color: #e5e5e2;
+      text-align: center;
+   }
+
+   &__buttons {
+      display: inline-flex;
+      justify-content: center;
+      border: 2px solid rgb(253, 253, 253);
+      border-radius: 30px;
+      overflow: hidden;
+   }
+
+   &__button {
+      color: #fff;
+      padding: 0 25px;
+      max-width: 240px;
+      min-height: 60px;
+      transition: all 0.2s ease 0s;
+   }
+
+   .but--active{
+      color: #1a1a1d;
+      background-color: #fff;
+      font-weight: 600;
+   }
+
+   &__call{
+      text-align: center;
+
+      h2{
+         font-size: 20px;
+         margin-bottom: 5px;
+      }
+
+      p{
+         font-size: 24px;
+      }
+    
+   }
+
+   @media (max-width: 800px) {
+      &__actions {
+         padding: 10px 25px 0px 25px;
+         flex-direction: column;
+      }
+
+      &__actions-col {
+         padding: 20px 48px 30px 15px;
+      }
+   }
+
+   @media (max-width: 600px) {
+      &__actions {
+         padding: 10px 0px 0px 0px;
+         flex-direction: column;
+      }
+   }
+}
+
+.footer-bot {
+   font-family: 'Open Sans', sans-serif;
+   padding: 24px 0px;
+   background-color: #000000;
+   color: white;
+
+   &-container {
+      @extend %container-footer-l;
+   }
+
+   button:hover {
+      text-decoration: underline;
+   }
+
+   p {
+      font-size: 12px;
+      opacity: 0.6;
+   }
+
+   &__columns {
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 24px;
+
+      button {
+         font-size: 16px;
+         font-weight: 500;
+         display: block;
+      }
+   }
+
+   &__text {
+      margin-bottom: 16px;
+   }
+
+   @media (max-width: 800px) {
+      &__columns {
+         flex-direction: column;
+         align-items: center;
+         padding-bottom: 0px;
+
+         button {
+            margin-bottom: 20px;
+         }
+      }
+   }
+}

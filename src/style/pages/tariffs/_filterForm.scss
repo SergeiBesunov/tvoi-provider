@@ -1,0 +1,30 @@
+.t-form {
+    &__item-title {
+       font-weight: 700;
+       margin: 0 0 15px 0;
+    }
+ 
+    &__item-prices {
+       display: flex;
+       justify-content: space-between;
+    }
+ 
+    &__item-price {
+       width: 90px;
+       border-radius: 5px;
+       display: flex;
+       align-items: center;
+       padding: 8px;
+       background-color: #fff;
+       @extend %shadow;
+       color: #5e5e5e;
+       margin-right: 15px;
+ 
+       input {
+          padding-left: 20px;
+          width: 100%;
+          font-size: 14px;
+          background-color: transparent;
+       }
+    }
+ }

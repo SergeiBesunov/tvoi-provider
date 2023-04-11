@@ -1,0 +1,93 @@
+.tariffs {
+   padding: 150px 0px 50px 0px;
+   background-color: #f8f8f8;
+
+   &-container {
+      @extend %container-tariffs;
+   }
+
+   &__header-options {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 34px;
+
+      p{
+         line-height: 1;
+      }
+
+      .options-img {
+         width: 16px;
+         height: 16px;
+         margin-left: 7px;
+      }
+   }
+
+   &__body {
+      display: flex;
+   }
+
+   &__filters {
+      flex: 0 0 215px;
+      width: 215px;
+   }
+
+   &__cards {
+      flex: 0 1 auto;
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      justify-content: center;
+      align-self: flex-start;
+      padding: 0px 10px 10px 10px;
+   }
+
+   @media(max-width: 950px){
+      &__header-options {
+         margin-top: 40px;
+      }
+      &__body {
+         flex-direction: column;
+      }
+      &__filters {
+        padding-bottom: 40px;
+      }
+   }
+
+   @media(max-width: 450px){
+      &-container {
+        padding: 0 15px;
+      }
+   }
+}
+
+.card-wrapper {
+   width: 25%;
+   padding: 0 15px;
+   margin-bottom: 24px;
+   height: auto;
+
+   @media(max-width: 1400px){
+      width: 33.33%;
+   }
+
+   @media(max-width: 1200px){
+      width: 50%;
+   }
+
+   @media(max-width: 700px){
+      width: 100%;
+   }
+}
+
+.tariffs__cards-notfound{
+   p{
+      text-align: center;
+   }
+}
+
+
+
+
+
+
+

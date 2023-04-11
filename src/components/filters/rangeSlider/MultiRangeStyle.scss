@@ -1,0 +1,33 @@
+.range{
+    margin-top: 10px;
+    text-align: center;
+}
+.multi-range-slider {
+    border: none !important;
+    box-shadow: none !important;
+}
+.multi-range-slider .thumb .caption * {
+    display: none !important;
+    opacity: 0;
+    visibility: 0;
+}
+
+.multi-range-slider .thumb::before{
+width: 14px !important;
+height: 14px !important;
+background-color: black !important;
+border: none !important;
+box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .6) !important;
+margin: -7px -12px !important;
+}
+
+.multi-range-slider .bar-left{
+    padding: 1px !important;
+    box-shadow: inset 0px 0px 5px #00000069 !important;
+}
+
+.multi-range-slider .bar-right{
+    box-shadow: inset 0px 0px 5px #00000069 !important;
+}
+
+

@@ -1,0 +1,48 @@
+
+.contacts{
+    padding: 150px 0px 50px 0px;
+    background-color: #f8f8f8;
+    font-family: 'Open Sans', sans-serif;
+
+    &-container{
+        @extend %container-contacts
+    }
+
+    &__info{
+        .title2{
+            text-align: start;
+        }
+    }
+
+    &__info-row{
+        display: flex;
+        margin-bottom: 20px;
+
+        img{
+            width: 35px;
+            height: 35px;
+            object-fit: contain;
+        }
+    }
+
+    &__info-row-block{
+        margin-left: 10px;
+
+        h3{
+            font-size: 16px;
+            line-height: 1.5;
+            margin-top: 3px;
+        }
+    }
+
+    &__map{
+        width: 50%;
+        margin-bottom: 15px;
+    }
+
+    @media(max-width:1200px){
+        &__map{
+            width: 100%;
+        }
+    }
+}

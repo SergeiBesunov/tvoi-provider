@@ -1,0 +1,33 @@
+.sort-popap {
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+ 
+    .sort--active{
+       font-weight: 800;
+       background-color: #e8eef579;
+    }
+ 
+    p {
+       cursor: pointer;
+    }
+ 
+    ul {
+       @extend %shadow;
+       background-color: #fff;
+       overflow: hidden;
+       position: absolute;
+       z-index: 2;
+       border-radius: 10px;
+       right: 0;
+       top: 200%;
+ 
+       li {
+          cursor: pointer;
+          padding: 16px 15px;
+          white-space: nowrap;
+          &:hover {
+             background-color: #e8eef5;
+          }
+       }
+    }
+ }

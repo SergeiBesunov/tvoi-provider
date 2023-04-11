@@ -37,6 +37,20 @@ function Header() {
       closeNavMenu();
    };
 
+  // Вешаем обработчик отлавливания клика на документ для закрытия мобильного меню навигации
+   React.useEffect(() => {
+      const handleClickOnNavMenuMobile = ({ target }) => {
+         console.log(target)
+         if (!target.closest('.header__nav-list') && !target.closest('.burger-menu')){
+            closeNavMenu()
+         }
+      };
+
+      document.body.addEventListener(`click`, handleClickOnNavMenuMobile);
+   }, []);
+
+
+
    return (
       <div className="header">
          <HeaderTop />
@@ -64,7 +78,7 @@ function Header() {
                            <button className="header__nav-link link--disabled">Тарифы</button>
                            <SelectedNav closeNavSelect={closeNavSelect} closeMenu={closeNavMenu} />
                         </li>
-                        <li className="header__nav-list-item">
+                        <li className="header__nav-list-item" >
                            <button className="header__nav-link" onClick={handleClickOnQuestions}>
                               Частые вопросы
                            </button>

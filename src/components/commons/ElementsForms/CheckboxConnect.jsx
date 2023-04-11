@@ -11,7 +11,7 @@ export default function CheckboxConnect({ value, onChange, name }){
                     checked={value}
                 />
                <p>
-                  Я даю <a href="/">Согласие на обработку персональных данных</a>
+                  Я даю <a>Согласие на обработку персональных данных</a>
                </p>
         </div>
    )           

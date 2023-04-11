@@ -48,8 +48,7 @@ function Footer() {
                <div className="connect-top">
                   <h2 className="connect-title">Подключиться проще, чем Вы думаете</h2>
                   <p className="connect-text">
-                     Вам нужно всего лишь выбрать интересующие Вас услуги, а остальное мы сделаем за
-                     Вас.
+                     Вам нужно всего лишь выбрать интересующие Вас услуги, а остальное мы сделаем за Вас.
                   </p>
                   <div className="connect__actions">
                      <div className="connect__actions-col">
@@ -124,7 +123,7 @@ function Footer() {
                   согласие на обработку Ваших персональных данных
                </p>
                <p className="footer-bot__map">
-                  <a href="/">Карта сайта</a>
+                  <button>Карта сайта</button>
                </p>
             </div>
          </div>

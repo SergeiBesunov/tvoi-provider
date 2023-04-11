@@ -66,7 +66,7 @@ function FooterConnectForm() {
       <form className="form-connect" onSubmit={handleSubmit}>
          <TextFieldConnect
             name={'userName'}
-            placeholder={'Ваше имя'}
+            placeholder={'Ваше имя*'}
             value={dataForm.userName}
             onChange={handleChange}
             error={errors.userName}
@@ -102,8 +102,7 @@ function FooterConnectForm() {
          </button>
 
          <p>
-            Отправляя заявку, вы соглашаетесь с
-            <a href="/"> Политикой обработки персональных данных</a>
+            Отправляя заявку, вы соглашаетесь с <a>Политикой обработки персональных данных</a>
          </p>
       </form>
    );

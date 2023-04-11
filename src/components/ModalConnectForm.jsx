@@ -108,7 +108,7 @@ function ModalForm() {
 
             <TextFieldConnect
                name={'userName'}
-               placeholder={'Ваше имя'}
+               placeholder={'Ваше имя*'}
                value={dataForm.userName}
                onChange={handleChange}
                error={errors.userName}
@@ -141,7 +141,7 @@ function ModalForm() {
 
             <p>
                Отправляя заявку, вы соглашаетесь с
-               <a href="/"> Политикой обработки персональных данных</a>
+               <a> Политикой обработки персональных данных</a>
             </p>
          </form>
 

@@ -55,7 +55,7 @@ React.useEffect(()=>{
    return (
       <div className="questions">
          <div className="questions-container">
-            <h2 className="title2">Нас часто справшивают</h2>
+            <h2 className="title2">Нас часто спрашивают</h2>
             <div className="questions__blocks">
                <div className="questions__block">
                 {quesDropdowns1.map((obj, i) => <Dropdown key={i} {...obj}/>)}
